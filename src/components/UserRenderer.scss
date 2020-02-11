@@ -1,0 +1,38 @@
+.user-renderer {
+    position: relative;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: lightgray;
+
+    &__avatar {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    &__info {
+        color: rgb(172, 172, 172);
+        position: absolute;
+        height: 100%;
+        margin-left: 1rem;
+        display: inline-block;
+
+    }
+
+    .info {
+        &__title {
+            color: rgb(48, 48, 48);
+            font-weight: bold;
+        }
+
+        &__secondary {
+            font-size: 1rem;
+            display: block;
+
+            &-highlight {
+                color: gray;
+            }
+        }
+    }
+}
