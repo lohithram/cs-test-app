@@ -1,3 +1,20 @@
+### Approach
+
+Limiting to the scope of the task, my approach is simple.
+I have created DropDown pure component which is hydrated by TypeAhead container.
+TypeAhead knows how to satisfy data dependency. It uses useGithubUserSearch hook to search and fetch git users data.
+
+I decided on hooks after learning during the phone call you have employed hooks in your SPA.
+
+Testing - I have given examples of how different entities can be tested.
+DropDown.test.tsx, UserRenderer.test.tsx
+TypeAhead.test.tsx(mocking the hook)
+useSearch.test.tsx(mocking the API call)
+
+Obviously more improvements can be done on multiple fronts.
+For example the DropDown.tsx can be enhanced to respond to key arrow presses to navigate the drop down list.
+Click away or Esc to close the list etc...
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
